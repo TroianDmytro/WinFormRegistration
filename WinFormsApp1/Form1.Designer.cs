@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             lb_Login = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // lb_Login
@@ -41,12 +42,21 @@
             lb_Login.TabIndex = 0;
             lb_Login.Text = "Login";
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(14, 44);
+            textBox1.Margin = new Padding(5, 4, 5, 4);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(234, 34);
+            textBox1.TabIndex = 8;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Brown;
             ClientSize = new Size(273, 245);
+            Controls.Add(textBox1);
             Controls.Add(lb_Login);
             Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
             FormBorderStyle = FormBorderStyle.Fixed3D;
@@ -62,5 +72,6 @@
         #endregion
 
         private Label lb_Login;
+        private TextBox textBox1;
     }
 }
