@@ -31,6 +31,7 @@
             lb_Login = new Label();
             textBox1 = new TextBox();
             lb_Password = new Label();
+            textBox2 = new TextBox();
             SuspendLayout();
             // 
             // lb_Login
@@ -61,12 +62,21 @@
             lb_Password.TabIndex = 12;
             lb_Password.Text = "Password";
             // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(14, 114);
+            textBox2.Margin = new Padding(5, 4, 5, 4);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(234, 34);
+            textBox2.TabIndex = 15;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Brown;
             ClientSize = new Size(273, 245);
+            Controls.Add(textBox2);
             Controls.Add(lb_Password);
             Controls.Add(textBox1);
             Controls.Add(lb_Login);
@@ -86,5 +96,6 @@
         private Label lb_Login;
         private TextBox textBox1;
         private Label lb_Password;
+        private TextBox textBox2;
     }
 }
