@@ -19,7 +19,7 @@ namespace WinFormsApp1
                 e.Handled = true;
                 return;
             }
-            textBox1.Text.Append(e.KeyChar);
+            //textBox1.Text =  textBox1.Text.Append(e.KeyChar).ToString();
         }
     }
 }
