@@ -52,6 +52,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(234, 34);
             textBox1.TabIndex = 8;
+            textBox1.KeyPress += textBox1_KeyPress;
             // 
             // lb_Password
             // 
@@ -80,6 +81,7 @@
             button1.TabIndex = 17;
             button1.Text = "Registration";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
