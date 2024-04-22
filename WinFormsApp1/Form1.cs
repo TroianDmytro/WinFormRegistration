@@ -11,5 +11,17 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                return;
+            }
+            textBox1.Text.Append(e.KeyChar);
+
+
+        }
     }
 }
