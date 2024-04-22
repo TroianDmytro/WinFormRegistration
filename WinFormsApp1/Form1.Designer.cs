@@ -32,6 +32,7 @@
             textBox1 = new TextBox();
             lb_Password = new Label();
             textBox2 = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // lb_Login
@@ -70,12 +71,23 @@
             textBox2.Size = new Size(234, 34);
             textBox2.TabIndex = 15;
             // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button1.Location = new Point(69, 184);
+            button1.Name = "button1";
+            button1.Size = new Size(116, 38);
+            button1.TabIndex = 17;
+            button1.Text = "Registration";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Brown;
             ClientSize = new Size(273, 245);
+            Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(lb_Password);
             Controls.Add(textBox1);
@@ -97,5 +109,6 @@
         private TextBox textBox1;
         private Label lb_Password;
         private TextBox textBox2;
+        private Button button1;
     }
 }
