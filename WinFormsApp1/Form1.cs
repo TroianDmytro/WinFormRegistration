@@ -20,8 +20,6 @@ namespace WinFormsApp1
                 return;
             }
             textBox1.Text.Append(e.KeyChar);
-
-
         }
     }
 }
