@@ -30,6 +30,7 @@
         {
             lb_Login = new Label();
             textBox1 = new TextBox();
+            lb_Password = new Label();
             SuspendLayout();
             // 
             // lb_Login
@@ -50,12 +51,23 @@
             textBox1.Size = new Size(234, 34);
             textBox1.TabIndex = 8;
             // 
+            // lb_Password
+            // 
+            lb_Password.AutoSize = true;
+            lb_Password.Location = new Point(14, 82);
+            lb_Password.Margin = new Padding(5, 0, 5, 0);
+            lb_Password.Name = "lb_Password";
+            lb_Password.Size = new Size(101, 28);
+            lb_Password.TabIndex = 12;
+            lb_Password.Text = "Password";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Brown;
             ClientSize = new Size(273, 245);
+            Controls.Add(lb_Password);
             Controls.Add(textBox1);
             Controls.Add(lb_Login);
             Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
@@ -73,5 +85,6 @@
 
         private Label lb_Login;
         private TextBox textBox1;
+        private Label lb_Password;
     }
 }
